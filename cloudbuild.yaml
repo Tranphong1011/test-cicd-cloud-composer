@@ -32,4 +32,7 @@ steps:
   - -x
   - .*\.pyc|airflow_monitoring.py
   - /workspace/dags
-  - [GCS bucket dags path]
+  - gs://test-cicd-cloud-composer/dags
+
+options:
+  logging: CLOUD_LOGGING_ONLY
