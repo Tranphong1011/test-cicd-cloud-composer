@@ -1,6 +1,7 @@
 steps:
 - name: gcr.io/cloud-builders/docker
   id: Build Airflow DAGs Builder
+  timeout: 1200s 
   args: [
       'build',
       '-t', 'gcr.io/$PROJECT_ID/airflow-data-pipeline',
